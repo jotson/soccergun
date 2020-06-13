@@ -16,7 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="SoccerGun"
+run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Game="*res://game.tscn"
 
 [display]
 
@@ -51,6 +56,11 @@ right={
 kick={
 "deadzone": 0.5,
 "events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+shoot_gun={
+"deadzone": 0.5,
+"events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":2,"pressure":0.0,"pressed":false,"script":null)
  ]
 }
 
